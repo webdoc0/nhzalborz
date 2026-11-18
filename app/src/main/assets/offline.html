@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#064e43">
+<title>عدم اتصال به اینترنت | نهضت البرز</title>
+<style>
+:root{--bg:#d4f9e4;--ink:#0a352d;--muted:#4f7168;--brand:#0b6b57;--accent:#ff6a13;--surface:#fff;--font:Vazirmatn,Tahoma,system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1d19;--ink:#e4f6ef;--muted:#9bbdb2;--brand:#3fd1ae;--surface:#17352e}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);display:grid;place-items:center;
+  padding:calc(20px + env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));text-align:center}
+.card{max-width:380px;width:100%;background:var(--surface);border-radius:28px;padding:36px 24px;box-shadow:0 10px 30px rgba(5,82,74,.2)}
+svg{width:84px;height:84px;stroke:var(--brand);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+h1{font-size:20px;margin:18px 0 8px}
+p{margin:0 0 22px;color:var(--muted);line-height:1.9;font-size:15px}
+button{font:800 15px var(--font);min-height:50px;width:100%;border:0;border-radius:16px;background:var(--accent);color:#fff;cursor:pointer;transition:transform .15s}
+button:active{transform:scale(.97)}
+</style>
+</head>
+<body>
+<main class="card">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/>
+    <circle cx="12" cy="19.5" r=".8"/><path d="M3 3l18 18"/>
+  </svg>
+  <h1>اتصال اینترنت قطع است</h1>
+  <p>اتصال اینترنت خود را بررسی کنید و دوباره تلاش کنید.</p>
+  <button id="retry" type="button">تلاش مجدد</button>
+</main>
+<script>
+document.getElementById('retry').addEventListener('click',function(){location.href="https://nhzalborz.ir/index-app.php"});
+window.addEventListener('online',function(){location.href="https://nhzalborz.ir/index-app.php"});
+</script>
+</body>
+</html>
